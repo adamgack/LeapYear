@@ -10,4 +10,10 @@ public class LeapYearCalculatorTest {
         boolean result = leapYear.isLeapYear(2004);
         Assert.assertTrue(result);
     }
+    @Test
+    public void test2001IsNotLeapYear(){
+        LeapYearCalculator leapYear = new LeapYearCalculator();
+        boolean result = leapYear.isLeapYear(2001);
+        Assert.assertFalse(result);
+    }
 }
